@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Exercice 5</h1>
+    <h1>Ma fiche de présentation</h1>
+    <p id="nomComplet">.../p></p>
+    <p id="age">...</p>
+    <p id="ville">...</p>
+    <p id="presentation">...</p>
+
+    <script>
+      let fname = "sharaf";
+      let lname = "naai";
+      let age = 20;
+      let city = "marrakech";
+
+      document.getElementById("age").innerHTML = age;
+      document.getElementById("ville").innerHTML = city;
+      document.getElementById("nomComplet").innerHTML = `${fname} ${lname}`;
+      document.getElementById("presentation").innerHTML =
+        `"Je m'appelle ${fname} ${lname}, j'ai ${age} ans et j'habite à ${city}."`;
+      document.title = "Fiche de " + fname;
+    </script>
+  </body>
+</html>
